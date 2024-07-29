@@ -1,13 +1,61 @@
+:root {
+  --text-color: #334155;
+  --hover-color: #64748b;
+  --secondery-color: #94a3b8;
+  --blue-color:  #0EA5E9;
+
+  --bg-color: #475569;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.border{
+  border: 2px solid red;
+}
+
+.row{
+  flex-direction: row !important;
+  align-items: center !important;
+}
+.linkHover{
+  font-size: 15px !important;
+}
+.linkHover:hover{
+  color: var(--blue-color) !important;
+}
+@media screen and (max-width: 400px) {
+  .linkHover{
+      font-size: 13px !important;
+  }
+}
+
+.sliderLinkHover:hover{
+  color: var(--blue-color) !important;
+  cursor: pointer !important;
+}
+
+@media screen and (min-width: 900px) {
+  .displayLink{
+      display: none !important;
+  }
+}
+
+#SvgjsTspan2408{
+  color: #FFF;
 }
